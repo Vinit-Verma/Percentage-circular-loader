@@ -1,0 +1,42 @@
+body {
+  height: 100vh;
+  background: linear-gradient(#e8f0f7, #4d5bf9);
+}
+.container {
+  height: 400px;
+  width: 400px;
+  background-color: #fff;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px rgba(113, 113, 116, 0.25),
+    -10px -10px 5px rgba(113, 113, 116, 0.25);
+  display: grid;
+  place-items: center;
+}
+.circular-progress {
+  position: relative;
+  height: 250px;
+  width: 250px;
+  background-color: blueviolet;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+.circular-progress::before {
+  content: "";
+  position: absolute;
+  height: 85%;
+  width: 85%;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.value-container {
+  position: relative;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: blueviolet;
+}
